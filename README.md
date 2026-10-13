@@ -19,3 +19,5 @@ iPhone ignores icons set by Apps Script, so the shortcut is added from `pos.html
 `https://mozxchino.github.io/mkt-icons/pos.html#n=MKT(NO)&u=<encoded Apps Script /exec URL>&add`
 `&add` shows the add-to-home-screen steps; the saved shortcut opens the page, which forwards to the Apps Script link at once.
 The part after `#` stays on the phone (never sent to GitHub). `go.js` only forwards to `script.google.com/macros/s/.../exec|dev`.
+
+Send links over LINE with `?openExternalBrowser=1` before the `#` so LINE opens Safari/Chrome (its in-app browser cannot add to the home screen). The page also detects LINE/Facebook in-app browsers and Android and shows matching steps.
