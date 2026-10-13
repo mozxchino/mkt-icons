@@ -8,6 +8,6 @@
   window.GO = { u: u, n: n || '', inapp: /\bLine\/|FBAN|FBAV|Instagram/i.test(ua), android: /Android/i.test(ua) };   // LINE/FB in-app browser cannot add to home screen
   // only Apps Script web-app links: never an open redirect to other sites
   if (!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/(exec|dev)(\?p=\w+)?$/.test(u)) { GO.mode = 'bad'; return; }
-  if (q.has('add')) { q.delete('add'); history.replaceState(null, '', '#' + q.toString()); GO.mode = 'add'; return; }
+  if (q.has('add')) { if (!GO.inapp) { q.delete('add'); history.replaceState(null, '', '#' + q.toString()); } GO.mode = 'add'; return; }   // in LINE keep &add so 'open in Safari' still shows the steps
   GO.mode = 'go'; location.replace(u);
 })();
