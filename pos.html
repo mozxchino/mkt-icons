@@ -5,12 +5,12 @@
 <style>body{margin:0;font-family:system-ui,sans-serif;background:#F2F4F6;color:#17212B;text-align:center;padding:40px 16px}
 img{width:120px;border-radius:26px;box-shadow:0 6px 18px #0002}h1{font-size:22px;margin:18px 0 6px}p{color:#5F6A76;margin:4px 0}
 ol{text-align:left;max-width:320px;margin:20px auto;padding-left:22px;font-size:18px;line-height:1.9}
-.hi{background:#FFF3C4;border-radius:6px;padding:1px 4px}</style>
+.hi{background:#FFF3C4;border-radius:6px;padding:1px 4px}.sw{display:flex;align-items:center;justify-content:space-between;max-width:300px;margin:6px auto 4px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 1px 4px #0002;font-size:16px}.tg{width:46px;height:28px;border-radius:14px;background:#C7C7CC;position:relative}.tg:after{content:'';position:absolute;left:3px;top:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0004}.tg.on{background:#34C759}.tg.on:after{left:21px}.swn{font-size:14px;color:#B3261E;margin:2px 0 10px;text-align:center}</style>
 </head><body><img src="pos-512.png" alt=""><div id="m"><p>กำลังเปิด…</p></div>
 <script>var m=document.getElementById('m'),t=document.title;
 if(GO.mode==='bad')m.innerHTML='<h1>ลิงก์ไม่ถูกต้อง</h1><p>ขอลิงก์ใหม่จากเจ้าของร้าน</p>';
 if(GO.mode==='add'){var nm=t.replace(/[<>&]/g,'');
  m.innerHTML=GO.inapp?'<h1>เปิดในเบราว์เซอร์ก่อน</h1><ol><li>กดปุ่ม <b>⋯</b> หรือ <b>⋮</b> มุมขวา</li><li>เลือก <b>เปิดใน Safari</b> หรือ <b>เปิดในเบราว์เซอร์</b></li><li>จะเห็นหน้านี้อีกครั้ง แล้วทำตามขั้นต่อ</li></ol>'
  :GO.android?'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>⋮</b> มุมขวาบนของ Chrome</li><li>กด <b>เพิ่มลงในหน้าจอหลัก</b></li><li>กด <b>เพิ่ม</b></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>'
- :'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>แชร์</b> ⬆</li><li>กด <b>เพิ่มไปยังหน้าจอหลัก</b></li><li><span class=hi>ปิดสวิตช์ <b>เปิดเป็นเว็บแอป</b></span> แล้วกด <b>เพิ่ม</b></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>';}
+ :'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>แชร์</b> ⬆</li><li>กด <b>เพิ่มไปยังหน้าจอหลัก</b></li><li><span class=hi>ปิดสวิตช์ <b>เปิดเป็นเว็บแอป</b> ให้เป็นสีเทา</span> แล้วกด <b>เพิ่ม</b><div class=sw><span>เปิดเป็นเว็บแอป</span><span class="tg on"></span></div><div class=swn>❌ สีเขียว = ผิด ต้องกดปิด</div><div class=sw><span>เปิดเป็นเว็บแอป</span><span class=tg></span></div><div class=swn style="color:#1E7B34">✅ สีเทา = ถูก แล้วกด เพิ่ม</div></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>';}
 </script></body></html>
