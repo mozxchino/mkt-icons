@@ -11,6 +11,6 @@ ol{text-align:left;max-width:320px;margin:20px auto;padding-left:22px;font-size:
 if(GO.mode==='bad')m.innerHTML='<h1>ลิงก์ไม่ถูกต้อง</h1><p>ขอลิงก์ใหม่จากเจ้าของร้าน</p>';
 if(GO.mode==='add'){var nm=t.replace(/[<>&]/g,'');
  m.innerHTML=GO.inapp?'<h1>เปิดในเบราว์เซอร์ก่อน</h1><ol><li>กดปุ่ม <b>⋯</b> หรือ <b>⋮</b> มุมขวา</li><li>เลือก <b>เปิดใน Safari</b> หรือ <b>เปิดในเบราว์เซอร์</b></li><li>จะเห็นหน้านี้อีกครั้ง แล้วทำตามขั้นต่อ</li></ol>'
- :GO.android?'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>⋮</b> มุมขวาบนของ Chrome</li><li>กด <b>เพิ่มลงในหน้าจอหลัก</b></li><li>กด <b>เพิ่ม</b></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>'
+ :GO.android?'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>⋮</b> มุมขวาบน</li><li>เลื่อนหา <span class=hi><b>ติดตั้งและสร้างทางลัด</b></span><br><small>(บางเครื่องเขียนว่า <b>เพิ่มลงในหน้าจอหลัก</b>)</small></li><li>กด <b>ติดตั้ง</b> หรือ <b>เพิ่ม</b></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>'
  :'<h1>เพิ่ม '+nm+' ลงหน้าจอ</h1><ol><li>กดปุ่ม <b>แชร์</b> ⬆</li><li>กด <b>เพิ่มไปยังหน้าจอหลัก</b></li><li><span class=hi>ปิดสวิตช์ <b>เปิดเป็นเว็บแอป</b> ให้เป็นสีเทา</span> แล้วกด <b>เพิ่ม</b><div class=sw><span>เปิดเป็นเว็บแอป</span><span class="tg on"></span></div><div class=swn>❌ สีเขียว = ผิด ต้องกดปิด</div><div class=sw><span>เปิดเป็นเว็บแอป</span><span class=tg></span></div><div class=swn style="color:#1E7B34">✅ สีเทา = ถูก แล้วกด เพิ่ม</div></li><li>ต่อไปเปิดจากไอคอนบนหน้าจอ</li></ol>';}
 </script></body></html>
